@@ -1,6 +1,7 @@
 /**
  * @param {string} s
  * @return {number}
+ * Function to iterate through a Roman numeral string (in proper order) and output the corresponding integer
  */
 var romanToInt = function (s) {
     let sum = 0;
