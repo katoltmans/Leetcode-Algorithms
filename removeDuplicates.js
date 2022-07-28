@@ -17,5 +17,8 @@ var removeDuplicates = function (nums) {
     return console.log("nums: " + nums, "index: " + index);
 };
 
-removeDuplicates([1, 1, 2]);
+testArr1 = [1, 1, 2];
+console.log("testArr1 BEFORE: ", testArr1);
+removeDuplicates(testArr1);
+console.log("testArr1 AFTER: ", testArr1);
 removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
