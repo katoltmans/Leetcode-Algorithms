@@ -195,9 +195,76 @@ function processData(inputBlock) {
 }
 
 {
-    /*  */
+    /* Given an array of integers and a positive integer k, determine the number of (i,j) pairs where i<j and ar[i] + ar[j] is divisible by k.
+
+Example
+ar = [1,2,3,4,5,6]
+k = 5
+n = 6 (length of array)
+
+Three pairs meet the criteria: [1,4], [2,3] and [4,6]. */
 }
 
-{
-    /*  */
+function divisibleSumPairs(n, k, ar) {
+    // Write your code here
+    let count = 0;
+
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+            if ((ar[i] + ar[j]) % k === 0) {
+                count++;
+            }
+        }
+    }
+    return count;
 }
+
+console.log(divisibleSumPairs(6, 3, [1, 2, 3, 4, 5, 6]));
+
+{
+    /* There is a collection of input strings and a collection of query strings. For each query string, determine how many times it occurs in the list of input strings. Return an array of the results.
+
+Example
+strings = ['ab', 'ab', 'abc']
+queries = ['ab', 'abc', 'bc']
+
+There are 2 instances of 'ab', 1 of 'abc' and 0 of 'bc'. For each query, add an element to the return array,
+results = [2,1,0]. */
+}
+
+function matchingStrings(strings, queries) {
+    // Write your code here
+    let results = [];
+
+    for (let i = 0; i < queries.length; i++) {
+        let count = 0;
+        for (let j = 0; j < strings.length; j++) {
+            if (queries[i] == strings[j]) {
+                count++;
+            }
+        }
+        results.push(count);
+    }
+    return results;
+}
+
+console.log(
+    matchingStrings(
+        [
+            "abcde",
+            "sdaklfj",
+            "asdjf",
+            "na",
+            "basdn",
+            "sdaklfj",
+            "asdjf",
+            "na",
+            "asdjf",
+            "na",
+            "basdn",
+            "sdaklfj",
+            "asdjf",
+        ],
+        ["abcde", "sdaklfj", "asdjf", "na", "basdn"]
+    )
+);
