@@ -78,6 +78,8 @@ console.log(originalDigits("owoztneoer")); // expect 012
 console.log(originalDigits("zerozero")); // expect 0
 console.log(originalDigits("zeroonetwothreefourfivesixseveneightnine")); // expect 0123456789
 
+// Prior code passed 14/24 cases but was not efficient enough
+
 // var originalDigits = function(s) {
 
 //     let numArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
