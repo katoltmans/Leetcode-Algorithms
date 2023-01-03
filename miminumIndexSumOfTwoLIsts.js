@@ -33,5 +33,21 @@ var findRestaurant = function (list1, list2) {
 };
 
 console.log("Minimum Index Sum of Two Lists");
-console.log(); // expect
-console.log(); // expect
+console.log(
+    findRestaurant(
+        ["Shogun", "Tapioca Express", "Burger King", "KFC"],
+        [
+            "Piatti",
+            "The Grill at Torrey Pines",
+            "Hungry Hunter Steakhouse",
+            "Shogun",
+        ]
+    )
+); // expect [Shogun]
+console.log(
+    findRestaurant(
+        ["Beau Jo's", "Tapioca Express", "Burger King", "KFC"],
+        ["KFC", "Beau Jo's", "Burger King"]
+    )
+); // expect Beau Jo's
+console.log(findRestaurant(["happy", "sad", "good"], ["sad", "happy", "good"])); // expect ["happy","sad"]
