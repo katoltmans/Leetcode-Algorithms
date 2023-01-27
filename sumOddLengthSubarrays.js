@@ -32,3 +32,9 @@ console.log(sumOddLengthSubarrays([10, 11, 12])); // expect 66
 console.log(sumOddLengthSubarrays([1, 4, 2, 5, 3])); // expect 58
 console.log(sumOddLengthSubarrays([1, 2])); // expect 3
 console.log(sumOddLengthSubarrays([])); // expect 0
+
+
+
+const xorThis = (arr) => {
+    return arr;
+}
